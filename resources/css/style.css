@@ -437,7 +437,14 @@ footer {
   font-size: 80%;
 }
 
+.bottom{
+  padding: 25px 0;
+  background-color: #233140;
+  text-align: center;
+}
+
 .social-links {
+  font-size: 200%;
   list-style: none;
   text-align: center;
 }
@@ -490,13 +497,16 @@ footer p {
   margin-top: 20px;
 }
 
-footer h3 {
+footer h2 {
   font-family: 'Acme', sans-serif;
   font-weight: 700;
   text-align: center;
   color: aliceblue;
 }
 
+.bottom p{
+  color:white;
+}
 
 /* ----------------------------------------------- */
 
