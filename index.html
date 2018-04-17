@@ -2,297 +2,291 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
-    <title>Emily</title>
-    <style>
-        #map {
-            width: 100%;
-            height: 400px;
-            background-color: grey;
-        }
-    </style>
+  <title>Emily</title>
+  <style>
+    #map {
+      width: 100%;
+      height: 400px;
+      background-color: grey;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="fixedLogo">
-        <img src="resources/img/logo.jpg" alt="logo">
+  <div class="fixedLogo">
+    <img src="resources/img/logo.jpg" alt="logo">
+  </div>
+  <header>
+    <nav>
+      <div class="row">
+        <img src="resources/img/logo.jpg" alt="logo" class="logo">
+        <img src="resources/img/logo.jpg" alt="logo" class="logo-black">
+        <ul class="main-nav js--main-nav">
+          <li><a href="#features">About</a></li>
+          <li><a href="#works">Projects</a></li>
+          <li><a href="#cities">Skills</a></li>
+          <li><a href="#plans">Contact</a></li>
+        </ul>
+        <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+      </div>
+    </nav>
+    <div class="hero-text-box">
+      <h1 class="zoomIn animated">Hi, I'm Emily Huanying Yu</h1><br>
+      <h2>Front-End Web Developer | Full Stack Developer</h2>
+      <a class="btn btn-full js--scroll-to-plans fadeInUp animated" href="resources/pdf/resume.pdf" download="resume">Download my resume</a>
+      <a class="btn btn-ghost js--scroll-to-start fadeInUp animated" href="#">Show me more</a>
     </div>
-    <header>
-        <nav>
-            <div class="row">
-                <img src="resources/img/logo.jpg" alt="logo" class="logo">
-                <img src="resources/img/logo.jpg" alt="logo" class="logo-black">
-                <ul class="main-nav js--main-nav">
-                    <li><a href="#features">About</a></li>
-                    <li><a href="#works">Projects</a></li>
-                    <li><a href="#cities">Skills</a></li>
-                    <li><a href="#plans">Contact</a></li>
-                </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-            </div>
-        </nav>
-        <div class="hero-text-box">
-            <h1 class="zoomIn animated">Hi, I'm Emily Huanying Yu</h1><br>
-            <h2>Front-End Developer | Full Stack Developer</h2>
-            <a class="btn btn-full js--scroll-to-plans fadeInUp animated" href="resources/pdf/resume.pdf" download="resume">Download my resume</a>
-            <a class="btn btn-ghost js--scroll-to-start fadeInUp animated" href="#">Show me more</a>
+
+  </header>
+
+  <section class="section-features js--section-features" id="features">
+    <div class="row">
+      <h2 class="fadeInUp animated">About Me</h2>
+    </div>
+
+    <div class="row js--wp-1">
+      <div class="col selfie-box">
+        <img src="resources/img/em.png" class="responsive-img circle" alt="profile picture"><br>
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td><i class="ion-person icon-small"></i>Name: </td>
+            <td> Emily Huanying Yu</td>
+          </tr>
+          <tr>
+            <td><i class="ion-ios-location icon-small"></i>Address: </td>
+            <td> San Jose, CA</td>
+          </tr>
+          <tr>
+            <td><i class="ion-iphone icon-small"></i>Phone: </td>
+            <td> (925)-568-6118 </td>
+          </tr>
+          <tr>
+            <td><i class="ion-email icon-small"></i>Email: </td>
+            <td> yuuamelie@gmail.com</td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div class="col span-1-of-2 selfie-box">
+        <p>
+          Hey I'm Emily! I am an aspiring, full stack web developer with my main priorities being learning and improving my skillset. I have learned three stacks, those stacks being: MEAN, Python and IOS. Before learning how to code I was in the social work industry. Realizing that it was more of a hobby than my passion, I decided to follow my true dream of learning how to code. Since then I am truly in love with programming. My true goal is to enter the tech industry and become a valuable and reliable asset to the future company I work for. While you're here please check out my projects!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-steps" id="works">
+    <div class="row">
+      <h2>Projects</h2>
+    </div>
+    <div class="row project-showcase">
+      <div class="col span-1-of-3 project-photo">
+        <img src="resources/img/1.jpg"><br>
+      </div>
+      <div class="col span-1-of-3 project-photo">
+        <img src="resources/img/1.jpg">
+      </div>
+      <div class="col span-1-of-3 project-photo">
+        <img src="resources/img/1.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-cities" id="cities">
+    <div class="row">
+      <h2>Skills</h2>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-4 box">
+        <img src="resources/img/s4.jpeg" alt="Lisbon">
+        <h3>Web Fun</h3>
+        <div class="skill-feature">
+          <i class="ion-load-d icon-small"></i> Responsive Web Design
+        </div>
+        <div class="skill-feature">
+          <i class="ion-load-d icon-small"></i> JQuery
         </div>
 
-    </header>
+      </div>
+      <div class="col span-1-of-4 box">
+        <img src="resources/img/s2.jpeg" alt="San Francisco">
+        <h3>Python</h3>
+        <div class="skill-feature">
+          <i class="ion-ios-paw icon-small"></i> Flask
+        </div>
+        <div class="skill-feature">
+          <i class="ion-ios-paw-outline icon-small"></i> Django
+        </div>
+        <div class="skill-feature">
+          <i class="ion-ios-paw icon-small"></i> MySQL
+        </div>
+        <div class="skill-feature">
+          <i class="ion-ios-paw-outline icon-small"></i>
+        </div>
+      </div>
+      <div class="col span-1-of-4 box">
+        <img src="resources/img/s3.jpeg" alt="Berlin">
+        <h3>Java Script</h3>
+        <div class="skill-feature">
+          <i class="ion-social-javascript-outline icon-small"></i> MongoDB
+        </div>
+        <div class="skill-feature">
+          <i class="ion-social-javascript icon-small"></i> ExpressJS
+        </div>
+        <div class="skill-feature">
+          <i class="ion-social-javascript-outline icon-small"></i> AngularJS
+        </div>
+        <div class="skill-feature">
+          <i class="ion-social-javascript icon-small"></i> NodeJS
+        </div>
+      </div>
+      <div class="col span-1-of-4 box">
+        <img src="resources/img/s1.jpeg" alt="London">
+        <h3>IOS</h3>
+        <div class="skill-feature">
+          <i class="ion-ios-paw icon-small"></i> Swift
+        </div>
+        <div class="skill-feature">
+          <i class="ion-ios-paw-outline icon-small"></i>
+        </div>
+      </div>
+    </div>
 
-    <section class="section-features js--section-features" id="features">
+  </section>
+
+
+  <section class="section-plans" id="plans">
+    <h2 class="row">Get In Touch</h2>
+    <div class="row">
+      <form name="contact-form" id="gform" method="post" action="" class="contact-form">
         <div class="row">
-            <h2 class="fadeInUp animated">About Me</h2>
-        </div>
-
-        <div class="row js--wp-1">
-            <div class="col selfie-box">
-                <img src="resources/img/em.png" class="responsive-img circle" alt="profile picture"><br>
-                <table>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td><i class="ion-person icon-small"></i><strong>Name: </strong></td>
-                        <td> Emily Huanying Yu</td>
-                    </tr>
-                    <tr>
-                        <td><i class="ion-ios-location icon-small"></i><strong>Address: </strong></td>
-                        <td> San Jose, CA</td>
-                    </tr>
-                    <tr>
-                        <td><i class="ion-iphone icon-small"></i><strong>Phone: </strong></td>
-                        <td> (925)-568-6118 </td>
-                    </tr>
-                    <tr>
-                        <td><i class="ion-email icon-small"></i><strong>Email: </strong></td>
-                        <td> yuuamelie@gmail.com</td>
-                    </tr>
-
-                </table>
-
-
-            </div>
-
-            <div class="col span-1-of-2 selfie-box">
-                <p>
-                    Hey I'm Emily! I am an aspiring, full stack web developer with my main priorities being learning and improving my skillset. I have learned three stacks, those stacks being: Python, MEAN and IOS. Before learning how to code I was in the social work industry. Realizing that it was more of a hobby than my passion, I decided to follow my true dream of learning how to code. Since then I am truly in love with programming. My true goal is to enter the tech industry and become a valuable and reliable asset to the future company I work for. While you're here please check out my projects!
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-steps" id="works">
-        <div class="row">
-            <h2>Projects</h2>
-        </div>
-        <div class="row project-showcase">
-            <div class="col span-1-of-3 project-photo">
-                <img src="resources/img/1.jpg"><br>
-            </div>
-            <div class="col span-1-of-3 project-photo">
-                <img src="resources/img/1.jpg">
-            </div>
-            <div class="col span-1-of-3 project-photo">
-                <img src="resources/img/1.jpg">
-            </div>
-        </div>
-    </section>
-
-    <section class="section-cities" id="cities">
-        <div class="row">
-            <h2>Skills</h2>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/s4.jpeg" alt="Lisbon">
-                <h3>Web Fun</h3>
-                <div class="skill-feature">
-                    <i class="ion-load-d icon-small"></i> HTML
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-load-d icon-small"></i> CSS
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-load-d icon-small"></i> JQuery
-                </div>
-
-            </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/s2.jpeg" alt="San Francisco">
-                <h3>Python</h3>
-                <div class="skill-feature">
-                    <i class="ion-ios-paw icon-small"></i> Flask
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-ios-paw-outline icon-small"></i> Django
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-ios-paw icon-small"></i> MySQL
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-ios-paw-outline icon-small"></i> SQLite
-                </div>
-            </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/s3.jpeg" alt="Berlin">
-                <h3>Java Script</h3>
-                <div class="skill-feature">
-                    <i class="ion-social-javascript-outline icon-small"></i> MongoDB
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-social-javascript icon-small"></i> ExpressJS
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-social-javascript-outline icon-small"></i> AngularJS
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-social-javascript icon-small"></i> NodeJS
-                </div>
-            </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/s1.jpeg" alt="London">
-                <h3>IOS</h3>
-                <div class="skill-feature">
-                    <i class="ion-ios-paw icon-small"></i> Swift
-                </div>
-                <div class="skill-feature">
-                    <i class="ion-ios-paw-outline icon-small"></i> Swift
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="section-plans" id="plans">
-        <h2 class="row">Get In Touch</h2>
-        <div class="row">
-            <form name="contact-form" id="gform" method="post" action="" class="contact-form">
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="subject" name="subject" id="subject" placeholder="Your subject" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Message</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="message" placeholder="Your message"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" value="Send Message">
-                    </div>
-                </div>
-
-            </form>
-            <div style="display: none;" id="thankyou_message">
-                <h2>
-                    <strong>thank you for contacting me !</strong>
-                </h2>
-                <p>
-                    <strong>I will get back to you as quickly as possible. Have a great day ! :)</strong>
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="location-map">
-                <div id="mapCanvas" class="map-canvas"></div>
-            </div>
-        </div>
-
-
-
-
-
-        <div id="map"></div>
-        <script>
-            function initMap() {
-                var uluru = {
-                    lat: 37.37,
-                    lng: -121.9
-                };
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 15,
-                    center: uluru
-                });
-                var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                });
-            }
-        </script>
-
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdqztSOs8mnf8hEn80ymCn7ORbxmdi29c&callback=initMap">
-        </script>
-
-        </div>
-    </section>
-
-    <footer>
-        <div class="row">
-            <h3>Contact me through Webs</h3>&nbsp;
-            <ul class="social-links">
-                <li><a href="https://github.com/emilyhuanyingyu?tab=repositories"><i class="ion-social-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/feed/"><i class="ion-social-linkedin-outline"></i></a></li>
-                <li><a href="mailto:yuuamelie@gmail.com"><i class="ion-email"></i></a></li>
-            </ul>
+          <div class="col span-1-of-3">
+            <label for="name">Name</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+          </div>
         </div>
         <div class="row">
-            <p>
-                COPYRIGHT &copy;
-                <i class="fas fa-cog fa-spin"></i> EMILY YU 2018
-            </p>
+          <div class="col span-1-of-3">
+            <label for="email">Email</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+          </div>
         </div>
-    </footer>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="subject" name="subject" id="subject" placeholder="Your subject" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label>Message</label>
+          </div>
+          <div class="col span-2-of-3">
+            <textarea name="message" placeholder="Your message"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label>&nbsp;</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="submit" value="Send Message">
+          </div>
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/script.js"></script>
+      </form>
+      <div style="display: none;" id="thankyou_message">
+        <h2>
+          <strong>thank you for contacting me !</strong>
+        </h2>
+        <p>
+          <strong>I will get back to you as quickly as possible. Have a great day ! :)</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="location-map">
+        <div id="mapCanvas" class="map-canvas"></div>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {
+          lat: 37.37,
+          lng: -121.9
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdqztSOs8mnf8hEn80ymCn7ORbxmdi29c&callback=initMap">
+    </script>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <h3>Contact me through Webs</h3>&nbsp;
+      <ul class="social-links">
+        <li><a href="https://github.com/emilyhuanyingyu?tab=repositories"><i class="ion-social-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/feed/"><i class="ion-social-linkedin-outline"></i></a></li>
+        <li><a href="mailto:yuuamelie@gmail.com"><i class="ion-email"></i></a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <p>
+        COPYRIGHT &copy;
+        <i class="fas fa-cog fa-spin"></i> EMILY YU 2018
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
 
 </body>
 
