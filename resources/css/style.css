@@ -675,10 +675,11 @@ ul {
   overflow: hidden;
   box-shadow: 0 2px 2px grey;
   padding: 70px;
+  margin: 70px;
 }
 
 .project-photo img {
-  width: 70%;
+  width: 60%;
   height: 400px;
   opacity: 0.7;
   transform: scale(1.15);
