@@ -674,23 +674,25 @@ ul {
 .project-photo {
   overflow: hidden;
   box-shadow: 0 2px 2px grey;
-  padding: 20px;
+  padding: 70px;
 }
 
 .project-photo img {
-  width: 100%;
-  height: auto;
+  width: 70%;
+  height: 400px;
   opacity: 0.7;
   transform: scale(1.15);
   transition: transform 0.5s, opacity 0.5s;
-  padding: 10px;
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
 }
-
 
 /* ----------------------------------------------- */
 
