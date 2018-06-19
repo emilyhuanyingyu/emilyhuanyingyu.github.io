@@ -674,20 +674,17 @@ ul {
 .project-photo {
   overflow: hidden;
   box-shadow: 0 2px 2px grey;
-  padding: 70px;
+  padding: 20px;
   margin: 70px;
 }
 
+.project-photo ul {
+  margin: 20px;
+}
+
 .project-photo img {
-  width: 60%;
-  height: 400px;
-  opacity: 0.7;
-  transform: scale(1.15);
-  transition: transform 0.5s, opacity 0.5s;
   padding: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
 }
 
 .project-photo img:hover {
@@ -695,11 +692,10 @@ ul {
   transform: scale(1.03);
 }
 
-/* ----------------------------------------------- */
-
-
-/* FORM */
-
+.links a {
+  display: inline-block;
+  margin-right: 20px;
+}
 
 /* ----------------------------------------------- */
 
