@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
     crossorigin="anonymous">
 
+
   <title>Emily</title>
   <style>
     #map {
@@ -122,12 +123,12 @@
       <h2>Projects</h2>
     </div>
     <div class="row project-showcase" id="sailing">
-        
+
       <div class="project-photo">
-          <h2>Great Pond Yacht Club women’s learn-to-sail program</h2>
+        <h2>Great Pond Yacht Club women’s learn-to-sail program</h2>
         <img src="resources/img/sailing.png">
         <br>
-        
+
         <h4>In this program, captains are offering the sailing instruction on the day and time listed on the events calendar,
           and students can put a request for a captain on the calendar by clicking on the day number within the calendar
           that they are hoping to sail. </h4>
@@ -147,9 +148,9 @@
       </div>
 
       <div class="project-photo" id="groupBuying">
-          <h2>Group Buying</h2>
+        <h2>Group Buying</h2>
         <img src="resources/img/gb.png">
-        
+
         <h4>
           Group-buying features different cell phone plans created by user or admin, with the group completed when a set number of
           people agree to join the plan.
@@ -161,17 +162,18 @@
           <li>Displayed contents in different devices responsively (CSS grid system).</li>
         </ul>
         <div class="links">
-          <a href="https://www.youtube.com/watch?v=H5z63dORbJY&feature=youtu.be">Video link</a>
-          <a href="https://github.com/emilyhuanyingyu/groupBuying">Github link</a>
+          <div class="onelink">
+            <a href="https://www.youtube.com/watch?v=H5z63dORbJY&feature=youtu.be">Video link</a>
+          </div>
+          <div class="onelink">
+            <a href="https://github.com/emilyhuanyingyu/groupBuying">Github link</a>
+          </div>
         </div>
       </div>
-
-
 
       <div class="project-photo" id="learnUp">
         <h2>Learn Up Teaching Platform</h2>
         <img src="resources/img/learnup.png">
-        
         <h4>Web app designed for a nonprofit organization in order to teach dyslexic children how to read using phonics.
         </h4>
         <ul>
@@ -180,8 +182,23 @@
           <li>Implement users with admin or user account systems</li>
         </ul>
         <div class="links">
-          <a href="https://www.youtube.com/watch?v=vgIEqFL0lD8">Video link</a>
-          <a href="https://github.com/emilyhuanyingyu/LearnUp">Github link</a>
+          <div class="onelink">
+            <a href="/#learnUp" id="popup__toggle">Watch Video</a>
+            <div class="popup__overlay">
+              <div class="popup">
+                <a href="#" class="popup__close">X</a>
+              </div>
+            </div>
+            <div class="popup__overlay">
+              <div class="popup" id="popupVid">
+                <a class="popup__close">X</a>
+                <iframe src="https://www.youtube.com/embed/vgIEqFL0lD8" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="onelink">
+            <a href="https://github.com/emilyhuanyingyu/LearnUp">Github link</a>
+          </div>
         </div>
       </div>
     </div>
@@ -226,9 +243,9 @@
         <div class="skill-feature">
           <i class="ion-ios-paw-outline icon-small"></i> Angular 4
         </div>
-        <div class="skill-feature">
+        <!-- <div class="skill-feature">
           <i class="ion-ios-paw icon-small"></i> React
-        </div>
+        </div> -->
         <div class="skill-feature">
           <i class="ion-ios-paw-outline icon-small"></i> Express
         </div>
@@ -438,6 +455,56 @@
   <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
   <script src="vendors/js/jquery.waypoints.min.js"></script>
   <script src="resources/js/script.js"></script>
+
+  <script>
+    var p = $(".popup__overlay");
+
+    $("#popup__toggle").click(function () {
+      p.css("display", "block");
+    });
+    p.click(function (event) {
+      e = event || window.event;
+      if (e.target == this) {
+        $(p).css("display", "none");
+      }
+    });
+    $(".popup__close").click(function () {
+      p.css("display", "none");
+    });
+
+    //video popup
+    function toggleVideo(state) {
+      // if state == 'hide', hide. Else: show video
+      var div = document.getElementById("popupVid");
+      var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+      //div.style.display = state == 'hide' ? 'none' : '';
+      func = state == "hide" ? "pauseVideo" : "playVideo";
+      iframe.postMessage(
+        '{"event":"command","func":"' + func + '","args":""}',
+        "*"
+      );
+    }
+
+    $("#popup__toggle").click(function () {
+      p.css("visibility", "visible").css("opacity", "1");
+    });
+
+    p.click(function (event) {
+      e = event || window.event;
+      if (e.target == this) {
+        $(p)
+          .css("visibility", "hidden")
+          .css("opacity", "0");
+        toggleVideo("hide");
+      }
+    });
+
+    $(".popup__close").click(function () {
+      p.css("visibility", "hidden").css("opacity", "0");
+      toggleVideo("hide");
+    });
+
+  </script>
 
 </body>
 
